@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.localnet]
-sol_store = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+sol_store = "3aeX9JsMSHueuLGDoigyt935Yom9cQAN3z8E58v7QDB4"
 
 [registry]
 url = "https://anchor.projectserum.com"
@@ -9,6 +9,10 @@ url = "https://anchor.projectserum.com"
 [provider]
 cluster = "localnet"
 wallet = "/Users/pratiksaria/.config/solana/id.json"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "mpl_token_metadata.so"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
